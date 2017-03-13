@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "214597945025",
+    "firebase_url": "https://quiz-4a25a.firebaseio.com",
+    "project_id": "quiz-4a25a",
+    "storage_bucket": "quiz-4a25a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214597945025:android:aabf88ba1347f42d",
+        "android_client_info": {
+          "package_name": "com.example.veyisegemenerden.wehavequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214597945025-lmm2sl3qdh930cqtedueqg5k8dbi4re0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8OA3FaYZ-u_MYcV8q-gobTJu4lpm0ohw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@mipmap/back"
+    android:fillViewport="false"
+    android:id="@+id/profil_tab"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/profile_information_textview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Profile Information"
+            android:layout_below="@+id/profile_image_imageView"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="Name"
+            android:id="@+id/profile_name_editText"
+            android:layout_below="@+id/profile_information_textview"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="Last Name"
+            android:id="@+id/profile_lastname_editText"
+            android:layout_below="@+id/profile_name_editText"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="E-mail"
+            android:id="@+id/profile_email_editText"
+            android:layout_below="@+id/profile_lastname_editText"
+            android:layout_height="50dp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+
+
+        <TextView
+            android:background="#fffff0"
+            android:id="@+id/profile_gender_textView"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="150dp"
+            android:paddingTop="8dp"
+            android:text="Gender"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_below="@+id/profile_email_editText"
+            android:layout_alignLeft="@+id/profile_email_editText"
+            android:layout_alignStart="@+id/profile_email_editText" />
+
+        <RadioGroup
+            android:id="@+id/profile_gender_radioGroup"
+            android:layout_alignBottom="@+id/profile_gender_textView"
+            android:layout_alignEnd="@+id/profile_email_editText"
+            android:layout_alignRight="@+id/profile_email_editText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/profile_male_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="male"
+                android:textSize="15dp"/>
+
+            <RadioButton
+                android:id="@+id/profile_female_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="female"
+                android:textSize="15dp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:background="#3E464D"
+            android:id="@+id/profile_set_button"
+            android:layout_below="@+id/profile_gender_textView"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:onClick="setProfileUsersOnClick"
+            android:text="Set"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+        <Button
+            android:background="#3E464D"
+            android:id="@+id/profile_backMain_button"
+            android:layout_below="@+id/profile_set_button"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:onClick="backMainFromProfile"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+
+    </RelativeLayout>
+</ScrollView>

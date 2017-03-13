@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreBoard"
+    android:background="@mipmap/back"
+    >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/topten"
+            android:id="@+id/imageViewForTop10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAlignment="center"
+            android:layout_below="@id/imageViewForTop10"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffeb35"
+            android:textSize="30dp"
+            android:id="@+id/top10"
+
+            android:layout_width="400dp"
+            android:layout_height="350dp" />
+        <Button
+            android:onClick="goMainFromScoreBoard"
+            android:text="BaCKMAIN"
+            android:id="@+id/goMainFromScoreBoard"
+            android:background="@mipmap/buttongri"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/top10"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:onClick="display50Down"
+            android:text="DİSPLAY50DOWN"
+            android:layout_toRightOf="@id/goMainFromScoreBoard"
+            android:id="@+id/display50Down"
+            android:background="@mipmap/buttongri"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/top10"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:onClick="display50Up"
+            android:text="display50Up"
+            android:layout_toLeftOf="@id/goMainFromScoreBoard"
+            android:id="@+id/displayUpTo50"
+            android:background="@mipmap/buttongri"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/top10"
+            android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

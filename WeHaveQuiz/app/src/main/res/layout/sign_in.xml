@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:weightSum="1"
+    tools:context=".SignIn"
+    >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/login9"
+        android:layout_gravity="center"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:textSize="40dp"
+        android:text="LOGIN"
+        android:textColor="#fffff0"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/signIn_email_editText"
+        android:background="#fffff0"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="E-mail"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/signIn_password_editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:background="#fffff0"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/signIn_login_button"
+        android:layout_width="224dp"
+        android:layout_height="102dp"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/buttongri"
+        android:onClick="signInLoginOnClick"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/signIn_goSignUp_textView"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:textColor="#1C0D01"
+        android:onClick="signInGoSignUpOnclick"
+        android:textSize="18dp"
+        android:text="Click to get an account."
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/delete_question_layout"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".QuestionsProgress"
+
+
+    >
+    <Spinner
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/delete_question_spinnercatergory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/delete_question_spinnercatergory"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/delete_question_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/delete_question_button"
+        android:text="DELETE"
+        android:onClick="deleteQuestion"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/delete_question_spinner"
+        android:background="@mipmap/buttongri"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+
+</RelativeLayout>

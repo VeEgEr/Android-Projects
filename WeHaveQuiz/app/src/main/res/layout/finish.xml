@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    >
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/finalQuiz_textView"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+
+        android:layout_marginLeft="50dp"
+        android:text="Top10"
+        android:onClick="goTop10FromFinish"
+        android:id="@+id/goScoreBoard_Button"
+        android:layout_below="@id/finalQuiz_textView"
+        android:background="@mipmap/buttongri"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+    <Button
+        android:layout_toRightOf="@id/goScoreBoard_Button"
+        android:layout_below="@id/finalQuiz_textView"
+        android:id="@+id/again_Button"
+        android:text="Play Again"
+        android:background="@mipmap/buttongri"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:onClick="goQuizFromFinish"
+        />
+    <Button
+
+        android:onClick="goMainFromFinish"
+        android:id="@+id/goMain_Button"
+        android:text="GoMAin"
+        android:background="@mipmap/buttongri"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/finalQuiz_textView"
+        android:layout_toRightOf="@id/again_Button"
+         />
+    <EditText
+    android:layout_marginTop="30dp"
+        android:id="@+id/nameTaker"
+        android:textAlignment="center"
+        android:hint=" ENTER YOUR NAME"
+        android:layout_below="@+id/goMain_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/submitScore"
+        android:text="SUBMIT"
+        android:onClick="submitScore"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameTaker"
+        android:background="@mipmap/buttongri"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+
+
+</RelativeLayout>
